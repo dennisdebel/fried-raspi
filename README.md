@@ -1,5 +1,5 @@
 # Raspberry Pi Frying
-code for live cooking/frying a raspberry pi board
+code for live cooking/frying a raspberry pi board during the [Coded.Kitchen]https://worm.org/production/coded-kitchen-presentation/() event.
 
 ## Hard+software
 raspi a+ + latest rasbian + pixel startup script (pi:pi)
