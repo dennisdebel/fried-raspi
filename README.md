@@ -6,6 +6,7 @@ raspi a+ + latest rasbian + pixel startup script (pi:pi)
 
 ## How to
 make your startup script in bash:
+
 `$ nano myscript.sh`
 
 insert:
@@ -18,12 +19,19 @@ while :; do /opt/vc/bin/vcgencmd measure_temp; sleep 1; done # display current c
 ```
 
 make executable:
+
 `$ chmod +x myscript.sh`
 
 then add it to your startup config, open/create:
+
 `$ nano /home/pi/.config/lxsession/LXDE-pi/autostart`
+
+
 (if that doesnt work, us the one below)
+
 `$ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
 
+
 when wanting it to open in a new terminal window add above '@screensaver':
+
 `@lxterminal -e "/home/pi/myscript.sh"`
